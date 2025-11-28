@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPro - Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>ExamPro</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#dashboards" class="nav-link">Dashboards</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                <div class="user-actions">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars" id="mobileMenuToggle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#" class="mobile-nav-link">Home</a>
+        <a href="#features" class="mobile-nav-link">Features</a>
+        <a href="#dashboards" class="mobile-nav-link">Dashboards</a>
+        <a href="#" class="mobile-nav-link">Pricing</a>
+        <a href="#" class="mobile-nav-link">Contact</a>
+        <div class="mobile-auth">
+            <button class="btn btn-outline btn-block">Login</button>
+            <button class="btn btn-primary btn-block">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Advanced Online Examination System</h1>
+                <p>Secure, scalable, and feature-rich platform for conducting exams with AI-powered proctoring and real-time analytics.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">Start Free Trial</button>
+                    <button class="btn btn-secondary btn-large">View Demo</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <div class="graphic-element exam-interface">
+                        <div class="exam-header">
+                            <span>Mathematics Final Exam</span>
+                            <span class="timer">45:00</span>
+                        </div>
+                        <div class="question">
+                            <p>1. What is the derivative of x²?</p>
+                            <div class="options">
+                                <div class="option">2x</div>
+                                <div class="option">x²</div>
+                                <div class="option">2x²</div>
+                                <div class="option">x</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>User Roles & Authentication</h3>
+                    <p>Secure login, registration, and role-based dashboards for Admin, Teacher, and Student.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Exam Creation Panel</h3>
+                    <p>Create various question types with rich media support and question bank system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Live Exam Scheduling</h3>
+                    <p>Set start/end times with automated lock and countdown timer for students.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Track exam progress, window changes, and detect suspicious activity automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Features -->
+    <section class="features-section advanced-features">
+        <div class="container">
+            <h2 class="section-title">Advanced Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Based Cheating Detection</h3>
+                    <p>Detect tab switching, face detection, and plagiarism checks for descriptive answers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Auto-Grading System</h3>
+                    <p>Instant results for MCQs, partial marking with keyword matching, and negative marking support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <h3>Question Randomization</h3>
+                    <p>Shuffle questions and options with different question sets for each student.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Exam Mode</h3>
+                    <p>Disable right-click, block copy-paste, full-screen enforcement, and browser tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-section" id="dashboards">
+        <div class="container">
+            <h2 class="section-title">Role-Based Dashboards</h2>
+            <div class="dashboard-preview">
+                <div class="dashboard-tabs">
+                    <div class="dashboard-tab active" data-tab="admin">Admin Dashboard</div>
+                    <div class="dashboard-tab" data-tab="teacher">Teacher Dashboard</div>
+                    <div class="dashboard-tab" data-tab="student">Student Dashboard</div>
+                </div>
+                
+                <div class="dashboard-content active" id="admin-dashboard">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value">1,254</div>
+                            <div class="stat-label">Total Students</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">86</div>
+                            <div class="stat-label">Active Teachers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">324</div>
+                            <div class="stat-label">Exams Created</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">98.7%</div>
+                            <div class="stat-label">System Uptime</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Recent Activity</h3>
+                    <div class="exam-list">
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>Mathematics Final Exam</h4>
+                                <p>Scheduled: Today, 10:00 AM - 12:00 PM</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-primary">Monitor</button>
+                            </div>
+                        </div>
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>Science Midterm</h4>
+                                <p>Completed: Yesterday, 78 students attempted</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-outline">View Results</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-content" id="teacher-dashboard">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value">24</div>
+                            <div class="stat-label">My Exams</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">156</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Pending Evaluations</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">4.8</div>
+                            <div class="stat-label">Avg. Rating</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Upcoming Exams</h3>
+                    <div class="exam-list">
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>Physics Quiz - Chapter 5</h4>
+                                <p>Tomorrow, 9:00 AM - 10:00 AM | 45 students enrolled</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-primary">Edit</button>
+                            </div>
+                        </div>
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>Chemistry Practical</h4>
+                                <p>Next Monday, 11:00 AM - 1:00 PM | 32 students enrolled</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-outline">Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-content" id="student-dashboard">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value">18</div>
+                            <div class="stat-label">Exams Taken</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">87.5%</div>
+                            <div class="stat-label">Average Score</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Upcoming Exams</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Practice Tests</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Upcoming Exams</h3>
+                    <div class="exam-list">
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>Mathematics Final Exam</h4>
+                                <p>Today, 10:00 AM - 12:00 PM | Duration: 2 hours</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-primary">Start Exam</button>
+                            </div>
+                        </div>
+                        <div class="exam-item">
+                            <div class="exam-info">
+                                <h4>History Midterm</h4>
+                                <p>Friday, 2:00 PM - 3:30 PM | Duration: 1.5 hours</p>
+                            </div>
+                            <div class="exam-actions">
+                                <button class="btn btn-outline">Practice</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="additional-features">
+        <div class="container">
+            <h2 class="section-title">More Powerful Features</h2>
+            <div class="features-columns">
+                <div class="feature-column">
+                    <h3><i class="fas fa-chart-bar"></i> Result & Analytics</h3>
+                    <ul>
+                        <li>Detailed result reports with analysis</li>
+                        <li>Graphical performance charts</li>
+                        <li>Topic-wise weak area analysis</li>
+                        <li>Export results to PDF/Excel</li>
+                    </ul>
+                </div>
+                <div class="feature-column">
+                    <h3><i class="fas fa-user-graduate"></i> Student Experience</h3>
+                    <ul>
+                        <li>Practice mode & mock tests</li>
+                        <li>Review answers feature</li>
+                        <li>Exam instructions page</li>
+                        <li>Mobile-friendly interface</li>
+                    </ul>
+                </div>
+                <div class="feature-column">
+                    <h3><i class="fas fa-cogs"></i> System Features</h3>
+                    <ul>
+                        <li>Responsive UI for all devices</li>
+                        <li>Email/SMS notifications</li>
+                        <li>Cloud backup & autosave</li>
+                        <li>Dark/Light mode support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ExamPro</h3>
+                    <p>Advanced online examination system with AI-powered proctoring and comprehensive analytics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#dashboards">Dashboards</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> support@exampro.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education St, Learn City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 ExamPro. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
